@@ -9,3 +9,14 @@ tn = a + (n - 1) * d
 
 print("\nThe Sum of Arithmetic Progression Series = " , total)
 print("The tn Term of Arithmetic Progression Series = " , tn)
+import math
+
+x = int(input("Please Enter First Number of an G.P Series: : "))
+y = int(input("Please Enter the Total Numbers in this G.P Series: : "))
+r = int(input("Please Enter the Common Ratio : "))
+
+total = (x * (1 - math.pow(r, y ))) / (1- r)
+ty = x * (math.pow(r, y - 1))
+
+print("\nThe Sum of Geometric Progression Series = " , total)
+print("The tn Term of Geometric Progression Series = " , ty)
